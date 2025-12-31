@@ -1,0 +1,24 @@
+# Data 
+data/raw/
+*.tar
+*.tar.gz
+*.gz
+
+# Big matrices (uncomment if your counts/features are large)
+# data/processed/brca_counts.csv
+# data/processed/ml_top200_features.csv
+# data/processed/ml_er_features.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+.DS_Store
