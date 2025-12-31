@@ -1,3 +1,4 @@
+
 ## How to Run This Project
 
 ### 1. Environment setup
@@ -5,6 +6,7 @@
 conda create -n cancer-rnaseq python=3.11 -y
 conda activate cancer-rnaseq
 pip install pandas numpy scikit-learn matplotlib
+
 
 2. Differential expression & pathway analysis (R)
 
@@ -125,3 +127,12 @@ Genes with strong positive weights (ER+ associated) included **NUP210, CDC25C, C
 In contrast, genes with strong negative weights (ER− associated) included **SIK2, AURKB, KIF23, ADAMTS5, and GSN**, capturing high mitotic activity, cytoskeletal remodeling, and extracellular matrix reorganization commonly observed in ER-negative (basal-like) breast cancers.
 
 Importantly, direct hormone receptor genes (ESR1/PGR) were excluded from features, indicating that the classifier captures broader ER-associated transcriptional programs rather than trivial marker expression.
+
+## Reproducibility
+
+To recreate the analysis environment:
+
+```bash
+conda env create -f environment.yml
+conda activate cancer-rnaseq-ml
+```

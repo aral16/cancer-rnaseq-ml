@@ -1,0 +1,26 @@
+name: cancer-rnaseq-ml
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Core
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+
+  # R base
+  - r-base=4.3
+
+  # R packages (CRAN)
+  - r-ggplot2
+  - r-dplyr
+  - r-tidyr
+  - r-data.table
+
+  # Bioconductor
+  - bioconductor-deseq2
+  - bioconductor-fgsea
+  - bioconductor-msigdbr
+  - bioconductor-summarizedexperiment
